@@ -55,7 +55,7 @@ const App = () => {
   }
 
   const totalHuman = data?.results && data?.results.filter((item)=>item?.gender==="male"||item?.gender==="female")
-const totalDroid = (data?.results && data?.results.length )- (totalHuman&& totalHuman.length)
+const totalDroid = data?.results && data?.results.length - totalHuman&& totalHuman.length
 
   const columns = [
     {

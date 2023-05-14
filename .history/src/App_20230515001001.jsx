@@ -54,8 +54,8 @@ const App = () => {
     setOpenSpeciesModal(false)
   }
 
-  const totalHuman = data?.results && data?.results.filter((item)=>item?.gender==="male"||item?.gender==="female")
-const totalDroid = (data?.results && data?.results.length )- (totalHuman&& totalHuman.length)
+  const rsl = data?.results && data?.results.fliter((item)=>item?.name==="male")
+  console.log(rsl)
 
   const columns = [
     {
@@ -161,8 +161,8 @@ const totalDroid = (data?.results && data?.results.length )- (totalHuman&& total
       </div>
       <div className="cardContainer">
 <Card cardName="Total Results" count={data?.results&&data?.results.length}/>
-<Card cardName="Total Droid" count={totalDroid}/>
-<Card cardName="Total Human" count={totalHuman && totalHuman.length}/>
+<Card cardName="Total Droid" count={2}/>
+<Card cardName="Total Human" count={4}/>
       </div>
       <SpeciesModal open={openSpeciesModal} handleCancel={handleCancel} handleOk={handleOk} speciesUrl={speciesUrl} />
     </div>
