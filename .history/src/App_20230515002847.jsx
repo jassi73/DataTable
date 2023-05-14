@@ -150,7 +150,7 @@ const totalDroid = (data?.results && data?.results.length )- (totalHuman&& total
 
       {
         isLoading ? (
-          <FontAwesomeIcon icon={faSpinner} />
+          <FontAwesomeIcon icon={faCircleExclamation} />
         ):(
 <>
 <Datatable
@@ -159,7 +159,7 @@ const totalDroid = (data?.results && data?.results.length )- (totalHuman&& total
         data={data?.results}
         columns={columns}
         responsive
-        
+        progressPending={isLoading}
         progressComponent={<FontAwesomeIcon icon={faSpinner} />}
       />
       <div className="pagination">
