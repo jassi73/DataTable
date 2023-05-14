@@ -50,7 +50,7 @@ table{
 .cardContainer{
   display: flex;
   justify-content:space-around;
-  margin-top:65px
+  margin-top:6px
 }
 .card{
   border: 1px solid #000;
