@@ -164,6 +164,7 @@ const App = () => {
             data={data?.results}
             columns={columns}
             responsive
+            progressComponent={<FontAwesomeIcon icon={faSpinner} />}
           />
           <div className="pagination">
             <Pagination

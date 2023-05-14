@@ -44,13 +44,12 @@ tr {
 table{
   width:100%
 }
-.paginationCard{
+.paginationXard{
   margin-top:0px !important
 }
 .cardContainer{
   display: flex;
   justify-content:space-around;
-  margin-top: 64px;
   
 }
 .card{
